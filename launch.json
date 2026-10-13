@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SuperIdentityToken",
+    "name": "SuperIdentity",
+    "symbol": "SUPER",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xd380a8b40fcea7c0a699ff0d8232a264b37a2f9f"
+  },
+  "notes": "SuperIdentityToken is a fixed-supply ERC-20 with EIP-2612 permit. Its argument-free constructor mints all 1,000,000,000 SUPER with 18 decimals to msg.sender. Transfers move the full amount. The supply remains constant after construction. pool.initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
